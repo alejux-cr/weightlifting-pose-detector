@@ -17,7 +17,7 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
 
 detector = PoseDetector()
 squat_count = 0
-position = None
+position = 'up'
 
 while cap.isOpened():
   ret, frame = cap.read()
